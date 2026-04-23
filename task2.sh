@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Project success
 TOTAL_USAGE=$(free -mt | grep "Total" | awk '{print $2}')
 USED_MEMORY=$(free -mt | grep "Total" | awk '{print $3}')
 PERCENTAGE=$(($USED_MEMORY * 100 / $TOTAL_USAGE))
